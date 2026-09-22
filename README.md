@@ -1,3 +1,7 @@
+## Demo Video
+
+Watch the Demo Video:(https://drive.google.com/file/d/16blJG5KXqe4NxYs-s6RKsS3L9k5lLVtU/view?usp=sharing)
+
 \# Hasamex AI Transcript Analyzer
 
 
