@@ -228,7 +228,7 @@ The embeddings are normalized before being stored.
 
 
 
-FAISS is used for fast vector similarity search.
+FAISS is used for vector similarity search.
 
 
 
@@ -328,7 +328,7 @@ Source: Transcript\_1\_France.txt
 
 
 
-Dr. Martin: Training matters, especially in the first year...
+Training matters, especially in the first year...
 
 ```
 
@@ -374,7 +374,11 @@ Answer the user's question ONLY using the transcript evidence provided.
 
 Do not invent information.
 
+
+
 Do not use outside knowledge.
+
+
 
 Do not create unsupported statistics.
 
@@ -382,7 +386,7 @@ Do not create unsupported statistics.
 
 
 
-\### Unsupported information handling
+\### Unsupported Information Handling
 
 
 
@@ -402,7 +406,7 @@ For example, when asked for the exact price of the robotic system, the applicati
 
 
 
-\### Gemini fallback
+\### Gemini Fallback
 
 
 
@@ -418,7 +422,7 @@ The application identifies common themes and differences across the three market
 
 
 
-\### Common themes
+\### Common Themes
 
 
 
@@ -434,7 +438,7 @@ The application identifies common themes and differences across the three market
 
 
 
-\### Market differences
+\### Market Differences
 
 
 
@@ -450,7 +454,7 @@ The UK places stronger emphasis on balancing funding and economics with clinical
 
 
 
-\### Adoption outlook
+\### Adoption Outlook
 
 
 
@@ -486,39 +490,39 @@ For 30+ transcripts, the architecture could be extended as follows:
 
 Documents
 
-&#x20;   ↓
+&#x20;  ↓
 
 Cloud Object Storage
 
-&#x20;   ↓
+&#x20;  ↓
 
 Document Processing Pipeline
 
-&#x20;   ↓
+&#x20;  ↓
 
 Chunking + Metadata
 
-&#x20;   ↓
+&#x20;  ↓
 
 Embedding Service
 
-&#x20;   ↓
+&#x20;  ↓
 
 Production Vector Database
 
-&#x20;   ↓
+&#x20;  ↓
 
 Metadata Filtering
 
-&#x20;   ↓
+&#x20;  ↓
 
 Retrieval API
 
-&#x20;   ↓
+&#x20;  ↓
 
 LLM
 
-&#x20;   ↓
+&#x20;  ↓
 
 Streamlit / Web Application
 
@@ -612,7 +616,7 @@ Hasamex-AI-Transcript-Analyzer/
 
 ```bash
 
-git clone <YOUR\_GITHUB\_REPOSITORY\_URL>
+git clone https://github.com/Charishma12301/Hasamex-AI-Transcript-Analyzer.git
 
 cd Hasamex-AI-Transcript-Analyzer
 
@@ -652,7 +656,7 @@ Windows PowerShell:
 
 
 
-```bash
+```powershell
 
 pip install -r requirements.txt
 
@@ -660,7 +664,7 @@ pip install -r requirements.txt
 
 
 
-\### 5. Configure Gemini API key
+\### 5. Configure Gemini API Key
 
 
 
@@ -692,7 +696,7 @@ Start Streamlit:
 
 
 
-```bash
+```powershell
 
 streamlit run app.py
 
@@ -794,7 +798,7 @@ How important is surgeon training for adoption?
 
 
 
-The application retrieves evidence from all three transcripts.
+The application retrieves relevant evidence from all three transcripts.
 
 
 
@@ -840,7 +844,11 @@ Primary evidence was verified for:
 
 
 
-An additional hallucination-control test was performed by asking for the exact price of the robotic system. Since the transcripts do not provide an exact price, the application correctly returned:
+An additional hallucination-control test was performed by asking for the exact price of the robotic system.
+
+
+
+Since the transcripts do not provide an exact price, the application correctly returned:
 
 
 
@@ -906,31 +914,7 @@ B.Tech Information Technology, 2026
 
 
 
-````
-
-
-
-After pasting, press \*\*Ctrl + S\*\*.
-
-
-
-Then run:
-
-
-
-```powershell
-
-git status
-
-````
-
-
-
-\*\*Important:\*\* Before we push to GitHub, we must verify that `.env` is NOT appearing in `git status`. That is critical because your Gemini API key is inside `.env`.
-
-
-
-Send me the `git status` output next.
+GitHub: https://github.com/Charishma12301/Hasamex-AI-Transcript-Analyzer
 
 
 
